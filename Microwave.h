@@ -1,17 +1,17 @@
-#ifndef MICROWAVE_H
-#define MICROWAVE_H
+#ifndef TRAFFICLIGHT_H
+#define TRAFFICLIGHT_H
 
 #include <bits/stdc++.h>
 using namespace std;
-class Microwave{
+class Trafficlight{
 public:
-Microwave();
-Microwave(int x,int y)
-int sttime(int x);
-int sttemp(int y);
+Trafficlight();
+Trafficlight(int x,int y)
+int stbutton1(int x);
+int stbutton2(int y);
 private:
 int time;
-int power;
+int color;
 int vk;
 };
 #endif // MICROWAVE_H
