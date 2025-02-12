@@ -1,32 +1,30 @@
-#include "Microwave.h"
+#include "Trafficlight.h"
 using namespace std;
-Microwave::Microwave(){
-  time=0;
-  power=0;
+Trafficlight::Trafficlight(){
+  button1=0;
+  button1=0;
 }
-Microwave::sttime(int x){
-  time=x;
-  vk=1;
-  cout << "Время работы" << " " << time <<" минуты.\n";
-  if(x==0){
-    vk=0;
-    cout << "Микроволновка выключена\n";
+Trafficlight::stbutton1(int x){
+  button1=x;
+  cout << "Кнопка 1 нажата?" << " " << button1;
+  if(x==2){
+    cout << "Горит красный для пешеходов";
   }
 }
-Microwave::sttemp(int y){
+Trafficlight::stbutton2(int y){
   power=y;
   if(power==1){
-    cout << "Мощность маленькая\n";
+    cout << "Загорается зелёный для пешеходов";
   }
   else if(power==2){
-    cout << "Мощность средняя\n";
+    cout << "Загора";
   }
   else{
     cout << "Мощность высокая\n";
   }
 }
 
-Microwave::Microwave(int x,int y){
+Trafficlight::Trafficlight(int x,int y){
   if(x<=3 & y<=3){
     time=x;
     power=y;
